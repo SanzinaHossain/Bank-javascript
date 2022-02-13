@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-semibold text-green-700 text-center   mt-16">International Bank Limited</h1>
+    </header>
+    <section class="mt-8">
+       <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 flex-wrap gap-4 w-3/4 mx-auto">
+           <div class="bg-yellow-400 rounded p-8">
+                <h3 class="text-3xl">Deposite</h3>
+                <h3 class="text-4xl">$<span id="deposite-b">00</span></h3>
+           </div>
+           <div class="bg-green-400 rounded p-8">
+            <h3 class="text-3xl">Withdraw</h3>
+            <h3 class="text-4xl">$<span id="withdraw-b">00</span></h3>
+           </div>
+           <div class="bg-orange-400 rounded p-8">
+            <h3 class="text-3xl">Balance</h3>
+            <h3 class="text-4xl">$<span id="total-b">500</span></h3>
+           </div>
+       </div>
+    </section>
+    <section class="mt-8">
+          <div class="grid lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4 w-3/4 mx-auto">
+              <div class="bg-emerald-200 rounded p-8">
+                  <h3 class="text-4xl">Deposite Balance</h3><br>
+                  <input class=" border-2 bg-gray-100 mb-5 rounded px-2"type="text" name="" id="deposite" placeholder="Enter Your Balance"><br>
+                  <button id="deposite-submit" class="bg-amber-600 py-2 px-4 rounded mb-5 font-semibold text-white "type="submit">Deposite</button>
+              </div>
+              <div class="bg-amber-200 rounded p-8">
+                <h3 class="text-4xl">Withdraw Balance</h3><br>
+                <input class=" border-2 bg-gray-100 mb-5 rounded px-2"type="text" name="" id="withdraw" placeholder="Enter Your Balance"><br>
+                <button id="withdraw-submit" class="bg-amber-600 py-2 px-4 rounded mb-5 font-semibold text-white"type="submit">Withdraw</button>
+              </div>
+        </div>
+    </section>
+    <script src="js/banking.js"></script>
+</body>
+</html>
